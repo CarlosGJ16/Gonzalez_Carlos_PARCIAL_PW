@@ -1,0 +1,134 @@
+/* Estilos Generales de la Galería */
+.galeria {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.galeria .imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.galeria .imagen {
+    position: relative;
+    width: 22%; /* Ajustamos el tamaño de las imágenes */
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Para asegurar que las imágenes se ajusten sin perder proporción */
+.galeria .imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin distorsionarse */
+    border-radius: 10px;
+}
+
+/* Animaciones para cada imagen */
+.galeria .efecto1:hover { transform: scale(1.1); }
+.galeria .efecto2:hover { transform: rotate(10deg); }
+.galeria .efecto3:hover { filter: grayscale(100%); }
+.galeria .efecto4:hover { transform: skewX(-10deg); }
+.galeria .efecto5:hover { transform: translateY(-10px); }
+.galeria .efecto6:hover { box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); }
+.galeria .efecto7:hover { opacity: 0.8; }
+.galeria .efecto8:hover { transform: rotate(180deg); } /* Corregimos la rotación para que no invierta el texto */
+
+/* Información de la Imagen (Título y Descripción en Hover) */
+.galeria .info {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 0 0 10px 10px;
+}
+
+.galeria .imagen:hover .info {
+    display: block;
+    opacity: 1;
+}
+
+/* Botón Cambiante */
+.boton-cambiante {
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.boton-cambiante:active {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}
+
+/* Animación de Ciclo de Colores */
+.caja-ciclo-colores {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #e74c3c;
+    animation: color-cycle 3s infinite;
+}
+@keyframes color-cycle {
+    0% { background-color: #e74c3c; }
+    33% { background-color: #3498db; }
+    66% { background-color: #2ecc71; }
+    100% { background-color: #e74c3c; }
+}
+
+/* Texto Rotativo */
+.texto-rotativo {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 20px auto;
+    animation: rotate-text 4s infinite linear;
+}
+@keyframes rotate-text {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Cambio de Tamaño con Hover */
+.caja-hover {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #9b59b6;
+    transition: transform 0.3s;
+}
+.caja-hover:hover {
+    transform: scale(1.2);
+}
+
+/* Velocidad de Animación Variable */
+.texto-animado {
+    font-size: 1.2em;
+    text-align: center;
+    animation: speed-animation 6s infinite linear;
+}
+@keyframes speed-animation {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+}
+
+
+
+
+

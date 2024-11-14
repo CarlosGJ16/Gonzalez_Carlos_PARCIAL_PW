@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes - Deportista</title>
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/pagina2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina1.html">Perfil Profesional</a></li>
+                <li><a href="pagina3.html">Blog Profesional</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="galeria">
+            <h1>Galería de Imágenes</h1>
+            <div class="imagenes">
+                <!-- Ejemplo de una imagen con animación de hover -->
+                <div class="imagen efecto1">
+                    <img src="img/manunitedinicio.jpg" alt="Imagen 1">
+                    <div class="info">
+                        <h2>Imagen 1</h2>
+                        <p>Cuando Cristiano Ronaldo unició en el Manchester United como un gran jugador.</p>
+                    </div>
+                </div>
+                <div class="imagen efecto2">
+                    <img src="img/gana5champion.jpg" alt="Imagen 2">
+                    <div class="info">
+                        <h2>Imagen 2</h2>
+                        <p>Cuando Cristiano Ronaldo ganó su 5ta Champions en su historia.</p>
+                    </div>
+                </div>
+                <div class="imagen efecto3">
+                    <img src="img/cristiano-ronaldo-portugal-2024.jpg" alt="Imagen 3">
+                    <div class="info">
+                        <h2>Imagen 3</h2>
+                        <p>Siendo parte fundamental de su país.</p>
+                    </div>
+                </div>
+                <div class="imagen efecto4">
+                    <img src="img/presentacion.jpg" alt="Imagen 4">
+                    <div class="info">
+                        <h2>Imagen 4</h2>
+                        <p>Cuando fue presentado en la Juventus.</p>
+                    </div>
+                </div>
+                <div class="imagen efecto5">
+                    <img src="img/cristiano-ronaldo-campeon-juventus.jpg" alt="Imagen 5">
+                    <div class="info">
+                        <h2>Imagen 5</h2>
+                        <p>Cuando se coronó campeón con la Juventus.</p>
+                    </div>
+                </div>
+                <div class="imagen efecto6">
+                    <img src="img/mbappe.jpg" alt="Imagen 6">
+                    <div class="info">
+                        <h2>Imagen 6</h2>
+                        <p>Junto a Mbappé en una gran comparación.</p>
+                    </div>
+                </div>
+                <div class="imagen efecto7">
+                    <img src="img/manunitedfinal.jpg" alt="Imagen 7">
+                    <div class="info">
+                        <h2>Imagen 7</h2>
+                        <p>Terminando sus últimos partidos en Europa.</p>
+                    </div>
+                </div>
+                <div class="imagen efecto8">
+                    <img src="img/alnassar.jpg" alt="Imagen 8">
+                    <div class="info">
+                        <h2>Imagen 8</h2>
+                        <p>Terminando su carrera en un club árabe.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Elementos adicionales solicitados -->
+        <div class="boton-cambiante">Haz clic aquí</div>
+        <div class="caja-ciclo-colores">Ciclo de Colores</div>
+        <div class="texto-rotativo">Texto Rotativo</div>
+        <div class="caja-hover">Hover para Cambiar Tamaño</div>
+        <div class="texto-animado">Texto con Velocidad Variable</div>
+    </main>
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; <span id="fecha"></span> Carlos González.</p>
+    </footer>
+
+    <!-- Script para mostrar la fecha -->
+    <script>
+        const fechaActual = new Date();
+        const opciones = { year: 'numeric', month: 'long', day: 'numeric' };
+        const fechaFormateada = fechaActual.toLocaleDateString('es-ES', opciones);
+        document.getElementById('fecha').textContent = fechaFormateada;
+    </script>
+</body>
+</html>
+
+
+

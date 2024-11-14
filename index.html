@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="css/principal.css">
+</head>
+<body>
+    <!-- Encabezado con Navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="pagina1.html">Perfil  Profesional</a></li>
+                <li><a href="pagina2.html">Galería de imagenes</a></li>
+                <li><a href="pagina3.html">Blog Profesional</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Principal: Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bienvenidos a mi página</h1>
+            <p>En esta pagina web se estara mostrando a un jugador de futbol profesional.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Descripción de Páginas -->
+    <section class="descripcion">
+        <div class="descripcion-item">
+            <h2>Perfil  Profesional</h2>
+            <p>Cristiano Ronaldo, nacido en 1985 en Portugal, es un futbolista legendario con múltiples títulos, incluyendo Balones de Oro y Champions League. Ha jugado en clubes como Manchester United, Real Madrid, Juventus y Al Nassr.</p>
+        </div>
+        <div class="descripcion-item">
+            <h2>Galería de imagenes</h2>
+            <p>Galería de imágenes de Cristiano Ronaldo, una leyenda del fútbol, mostrando momentos destacados de su carrera, desde sus logros individuales hasta sus celebraciones en equipo.</p>
+        </div>
+        <div class="descripcion-item">
+            <h2>Blog Profesional</h2>
+            <p>En este blog, comparto reflexiones sobre la carrera de Cristiano Ronaldo, sus logros, desafíos y su impacto en el fútbol mundial, así como su influencia fuera del campo como ícono global.</p>
+        </div>
+    </section>
+
+    <!-- Botones de navegación para las secciones -->
+    <section class="botones">
+        <a href="pagina1.html" class="boton animado">Perfil Personal</a>
+        <a href="pagina2.html" class="boton animado">Portafolio</a>
+        <a href="pagina3.html" class="boton animado">Blog</a>
+        <a href="pagina4.html" class="boton animado">boton1</a>
+        <a href="pagina5.html" class="boton animado">boton2</a>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; <span id="fecha"></span> Carlos González.</p>
+    </footer>
+
+    <!-- Script para mostrar la fecha -->
+    <script>
+        const fechaActual = new Date();
+        const opciones = { year: 'numeric', month: 'long', day: 'numeric' };
+        const fechaFormateada = fechaActual.toLocaleDateString('es-ES', opciones);
+        document.getElementById('fecha').textContent = fechaFormateada;
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

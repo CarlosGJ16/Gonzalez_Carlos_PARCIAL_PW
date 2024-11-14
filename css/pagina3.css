@@ -1,0 +1,114 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sección Artículos */
+.articulos {
+    padding: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.articulo {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.articulo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.articulo h2 {
+    color: #333;
+}
+
+.articulo p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.articulo .leer-mas {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.articulo .leer-mas:hover {
+    text-decoration: underline;
+}
+
+/* Caja Ciclo de Colores */
+.caja-ciclo-colores {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #ff7f7f;
+    animation: ciclo-colores 3s infinite;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Animación de ciclo de colores */
+@keyframes ciclo-colores {
+    0% { background-color: #ff7f7f; }
+    33% { background-color: #7f7fff; }
+    66% { background-color: #7fff7f; }
+    100% { background-color: #ff7f7f; }
+}
+
+/* Texto Rotativo */
+.texto-rotativo {
+    font-size: 1.5em;
+    margin: 20px auto;
+    animation: rotar 3s linear infinite;
+    text-align: center;
+}
+
+/* Rotación continua */
+@keyframes rotar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+

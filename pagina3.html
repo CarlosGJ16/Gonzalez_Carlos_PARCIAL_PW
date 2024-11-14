@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Profesional</title>
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/pagina3.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.0/scrollreveal.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina1.html">Perfil profesional</a></li>
+                <li><a href="pagina2.html">Galería de imagenes</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="articulos">
+            <h1>Blog Profesional: Cristiano Ronaldo</h1>
+
+            <!-- Artículo 1 - Primer paso profesional -->
+            <article class="articulo">
+                <h2>Comienzos en el Sporting de Lisboa</h2>
+                <img src="img/cristiano-sporting-.jpg" alt="Cristiano Ronaldo en el Sporting de Lisboa" class="imagen-articulo">
+                <p>El joven Cristiano Ronaldo comenzó su carrera profesional en el Sporting de Lisboa, donde demostró su increíble talento y potencial en las categorías inferiores...</p>
+                <a href="https://www.marca.com/mx/futbol/2024/08/15/66be2c9922601d461c8b4574.html" class="leer-mas boton-cambiante">Leer más</a>
+            </article>
+
+            <!-- Artículo 2 - Segundo paso profesional -->
+            <article class="articulo">
+                <h2>Transferencia al Manchester United</h2>
+                <img src="img/manunitedfinal.jpg" alt="Cristiano Ronaldo en el Manchester United" class="imagen-articulo">
+                <p>En 2003, Ronaldo fue transferido al Manchester United, donde continuó su ascenso meteórico hacia la fama internacional...</p>
+                <a href="https://as.com/futbol/internacional/cuanto-pago-el-manchester-united-por-cristiano-ronaldo-y-cual-era-su-salario-n/#:~:text=El%20Manchester%20United%20ha%20firmado,jamás%20desembolsada%20por%20un%20juvenil." class="leer-mas boton-cambiante">Leer más</a>
+            </article>
+
+            <!-- Artículo 3 - Tercer paso profesional -->
+            <article class="articulo">
+                <h2>Dominio en el Real Madrid</h2>
+                <img src="img/realmadrid.jpg" alt="Cristiano Ronaldo en el Real Madrid" class="imagen-articulo">
+                <p>Su paso por el Real Madrid marcó una etapa dorada, donde batió múltiples récords de goles y se convirtió en uno de los mejores jugadores de la historia del fútbol...</p>
+                <a href="https://www.marca.com/futbol/real-madrid/2018/07/11/5b4509bc468aebe93a8b466d.html" class="leer-mas boton-cambiante">Leer más</a>
+            </article>
+
+        </section>
+
+        <!-- Caja con animación de ciclo de colores -->
+        <div class="caja-ciclo-colores">Ciclo de Colores</div>
+        <!-- Texto rotativo -->
+        <div class="texto-rotativo">Texto Rotativo</div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="fecha"></span> Carlos González.</p>
+    </footer>
+
+    <script>
+        const fechaActual = new Date();
+        const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const fechaFormateada = fechaActual.toLocaleDateString('es-ES', opciones);
+        document.getElementById('fecha').textContent = fechaFormateada;
+
+        // Animación de desplazamiento suave para los artículos
+        ScrollReveal().reveal('.articulo', {
+            distance: '50px',
+            duration: 1000,
+            delay: 200,
+            origin: 'bottom',
+            opacity: 0,
+            reset: true
+        });
+    </script>
+</body>
+</html>
+
+
+
+
